@@ -30,7 +30,6 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/companyrecycle', [CompanyController::class, 'recycledata'])->name('companyrecycle');
     Route::get('/company/active/{id}', [CompanyController::class, 'active'])->name('companies.active');
-	//for logout
     Route::get('/logout', [LogoutController::class,'perform'])->name('logout');
 });
 
